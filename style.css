@@ -1,0 +1,107 @@
+@font-face{
+    font-family: "cute monster";
+    src: url(./CuteMonster-lg6AD.ttf);
+ }
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: onepiece;
+     color: #1b1919;
+     letter-spacing: 2px;
+     font-family: cute monster;
+ }
+ 
+ html , body {
+      height: 100%;
+      width: 100%;
+ }
+ body{
+    overflow: hidden;
+ }
+ .screen{
+    background-color: gray;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+ }
+ .screen > h1{
+    font-size: 50px;
+    margin-bottom: 15px;
+ }
+ 
+ .screen>button{
+    padding: 20px 60px;
+    font-size: 30px;
+    color: #1b1c1c;
+    font-weight: 700;
+    border: #DCF2F1 2px solid;
+    background-color: gray;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.9s;
+    border-radius: 5px;
+ }
+ .screen button:hover{
+    color: gray;
+    font-weight: 700;
+    background-color: #DCF2F1;
+    cursor: pointer;
+ }
+ 
+ .screen button:active{
+    transform: scale(0.9);
+ }
+ .screen h2{
+    margin-bottom: 25px;
+    font-size: 55px;
+ }
+ #monsters{
+    display: flex;
+    gap: 20px;
+ }
+ .monster{
+    border: 1px solid #DCF2F1;
+    border-radius: 10px;
+    text-align: center;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+ }
+ .monster h4{
+    margin-top: 15px;
+    font-size: 25px;
+ }
+ .monster img{
+    height: 150px;   
+    padding: 10px;
+ }
+ .monster:hover{
+    cursor: grab;
+    background-color: #DCF2F1;   
+ }
+ .monster:hover h4{
+ color: #0F1035;
+ }
+ .monster:active{
+    transform: scale(1.2);
+    cursor: grabbing;
+ }
+ .time-score{
+    height: 10%;   
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+    border-bottom: 2px solid #dcf2f155;
+ }
+ .time-score h4,h5{
+    font-size: 30px;
+ }
+ #playground{
+    /* background-color: antiquewhite; */
+    height: 90%;
+    width: 100%;
+ }
